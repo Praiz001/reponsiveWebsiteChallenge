@@ -1,0 +1,123 @@
+/*
+Primary Font: 
+Secondary Font: 
+
+Light Blue - rgb(42, 67, 168);
+Light Blue - rgba(207, 216, 252, 0.5);
+
+Dark Orange - rgb (199, 59, 16)
+Light Orange - rgb(255, 148, 115);
+
+*/
+
+img{
+    height: 200px;
+    width: 400px;
+    transition: all 0.5s ease-in-out 0.5ms; 
+    -webkit-transition: all 0.5s ease-in-out 0.5ms;  
+}
+
+img:hover{
+    height: 250px;
+    width: 480px;
+    transition: all 0.5s ease-in-out 0.5ms;
+    -webkit-transition: all 0.5s ease-in-out 0.5ms;
+}
+
+body {
+    background-color: rgba(207, 216, 260, 0.7);
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 50px;
+    width: 100%;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+li{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    font-family: 'Bree Serif', serif;
+}
+
+h2{
+    font-family: 'Bree Serif', serif;
+}
+
+.sidebar {
+    background-color: rgba(250, 182, 130, 0.6);
+}
+
+.post{
+    border-style: 0.2px;
+    border-style: solid;
+    border-color: rgb(227, 125, 16);
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.post > a{
+    text-decoration: none;
+    color: rgb(20, 5, 237);
+}
+.post > a:hover{
+    text-decoration: underline;
+    color: rgb(109, 172, 252);
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+
+}
+#image-1{
+    float: right;
+    height: 250px;
+    width: 400px;
+    transition: all 0.5s ease-in-out 0.5ms;
+    -webkit-transition: all 0.5s ease-in-out 0.5ms;
+}
+
+#image-1:hover{
+    height: 250px;
+    width: 500px;
+    transition: all 0.5s ease-in-out 0.5ms;
+    -webkit-transition: all 0.5s ease-in-out 0.5ms;
+}
+
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.image-grid > img{
+   margin: 10px;
+}
+
+@keyframes fade-in{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+#main {
+    animation-name: fade-in;
+    animation-duration: 3s;
+    
+}
+
+.sidebar {
+    animation-name: fade-in;
+    animation-duration: 3s;
+    
+}
